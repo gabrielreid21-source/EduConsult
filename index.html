@@ -1012,7 +1012,8 @@
             </a>
           </div>
         </div>
-        <div class="contact-form reveal" id="contactForm">
+        <form class="contact-form reveal" id="contactForm" name="inquiry" method="POST" data-netlify="true" action="/thank-you.html">
+          <input type="hidden" name="form-name" value="inquiry">
           <h3>Send Us a Message</h3>
           <p>We'll get back to you within 24 hours.</p>
           <div class="form-row">
@@ -1043,8 +1044,8 @@
             <label for="message">Your Message</label>
             <textarea id="message" name="message" placeholder="Tell us a bit about yourself and what you're looking for..."></textarea>
           </div>
-          <button type="button" class="form-submit" onclick="handleSubmit()">Send Message</button>
-        </div>
+          <button type="submit" class="form-submit">Send Message</button>
+        </form>
       </div>
     </div>
   </section>
@@ -1087,20 +1088,6 @@
       if (!wasOpen) item.classList.add('open');
     }
 
-    // Form handler — replace with Netlify Forms or Formspree in production
-    function handleSubmit() {
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      if (!name || !email) {
-        alert('Please fill in your name and email.');
-        return;
-      }
-      const subject = encodeURIComponent('New Inquiry — Caribbean Gateway Education Services');
-      const body = encodeURIComponent(
-        `Name: ${name}\nEmail: ${email}\nPhone: ${document.getElementById('phone').value}\nInterest: ${document.getElementById('interest').value}\nMessage: ${document.getElementById('message').value}`
-      );
-      window.location.href = `mailto:Gcamachoreid@icloud.com?subject=${subject}&body=${body}`;
-    }
   </script>
 
 </body>

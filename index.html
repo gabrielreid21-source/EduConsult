@@ -999,7 +999,7 @@
             </div>
             <div>
               <h4>Email</h4>
-              <a href="mailto:Gcamachoreid@icloud.com">Gcamachoreid@icloud.com</a>
+              <a href="/cdn-cgi/l/email-protection#e1a682808c8082898e93848885a188828d8e9485cf828e8c"><span class="__cf_email__" data-cfemail="642307050905070c0b16010d00240d07080b11004a070b09">[email&#160;protected]</span></a>
             </div>
           </div>
 
@@ -1054,7 +1054,7 @@
     <p>&copy; 2026 Caribbean Gateway Education Services. All rights reserved.</p>
   </footer>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     // Nav scroll effect
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => {
@@ -1095,7 +1095,13 @@
         alert('Please fill in your name and email.');
         return;
       }
-      // For now, open a mailto link. Replace with Netlify Forms or Formspree later.
       const subject = encodeURIComponent('New Inquiry — Caribbean Gateway Education Services');
       const body = encodeURIComponent(
-        `Name: ${name}\nEmail: ${email}\nPhone: ${document.getElementById('phone').value}
+        `Name: ${name}\nEmail: ${email}\nPhone: ${document.getElementById('phone').value}\nInterest: ${document.getElementById('interest').value}\nMessage: ${document.getElementById('message').value}`
+      );
+      window.location.href = `mailto:Gcamachoreid@icloud.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+
+</body>
+</html>

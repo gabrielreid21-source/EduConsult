@@ -1,286 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thank You | Caribbean Gateway Education Services</title>
-  <meta name="robots" content="noindex, nofollow">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Thank you — Caribbean Gateway</title>
+<meta name="description" content="Your message has been received. Gabriel will reply within 24 hours, usually faster. Caribbean Gateway — education consulting in Tbilisi, Georgia." />
 
-  <!-- 
-    ============================================
-    GOOGLE ADS CONVERSION TRACKING
-    ============================================
-    Step 1: Paste your Global Site Tag (gtag.js) below.
-    Get it from Google Ads > Tools > Conversions > New Conversion Action > Website > paste the snippet here.
+<!-- Allow indexing so Google Ads can confirm the conversion URL -->
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://educonsu.netlify.app/thank-you.html" />
 
-    Example (replace with your actual IDs):
+<!-- Open Graph -->
+<meta property="og:title" content="Thank you — Caribbean Gateway" />
+<meta property="og:description" content="Message received. We'll be in touch within 24 hours." />
+<meta property="og:type" content="website" />
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXXX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-XXXXXXXXXX');
-    </script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-    Step 2: Paste your conversion event snippet below.
+<link rel="stylesheet" href="styles.css" />
 
-    <script>
-      gtag('event', 'conversion', {
-        'send_to': 'AW-XXXXXXXXXX/XXXXXXXXXXXXXXXXXXX',
-        'value': 1.0,
-        'currency': 'USD'
-      });
-    </script>
+<script src="consent.js" defer></script>
 
-    ============================================
-  -->
+<!--
+  ─────────────────────────────────────────────────────────────────
+  GOOGLE ADS CONVERSION TRACKING
+  Replace AW-XXXXXXXXX/abcDEFghi with your Google Ads conversion ID
+  and label, then uncomment the block below.
+  ─────────────────────────────────────────────────────────────────
 
-  <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-XXXXXXXXX');
+    gtag('event', 'conversion', {
+      'send_to': 'AW-XXXXXXXXX/abcDEFghi',
+      'value': 1.0,
+      'currency': 'USD'
+    });
+  </script>
 
-    :root {
-      --deep: #0c2d3f;
-      --teal: #145a6e;
-      --mid: #1a7a8a;
-      --accent: #2fb5c7;
-      --sand: #f4efe8;
-      --cream: #faf8f5;
-      --white: #ffffff;
-      --text: #1a1a1a;
-      --muted: #5a6872;
+  ── Optional: Meta / Facebook Pixel lead event ─────────────────────
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'Lead');
+  </script>
+-->
+
+<style>
+  .ty-stage {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background: var(--ivory);
+  }
+  .ty-main {
+    display: grid;
+    place-items: center;
+    padding: clamp(48px, 8vw, 120px) var(--gutter);
+  }
+  .ty-card {
+    max-width: 880px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  .ty-stamp {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 18px;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    background: var(--paper);
+    margin-bottom: 36px;
+  }
+  .ty-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 0 4px rgba(184,146,74,0.18);
+    animation: pulse 1.8s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 4px rgba(184,146,74,0.18); }
+    50% { box-shadow: 0 0 0 8px rgba(184,146,74,0.06); }
+  }
+  .ty-headline {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(48px, 7vw, 96px);
+    letter-spacing: -0.025em;
+    line-height: 1.02;
+    margin: 0 0 28px;
+    text-wrap: balance;
+  }
+  .ty-headline em {
+    color: var(--gold);
+    font-style: italic;
+  }
+  .ty-lede {
+    font-family: var(--display);
+    font-weight: 300;
+    font-size: clamp(20px, 2.2vw, 26px);
+    line-height: 1.45;
+    color: var(--navy);
+    max-width: 56ch;
+    margin: 0 auto 48px;
+    text-wrap: pretty;
+  }
+  .ty-actions {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+  }
+  .ty-next {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--navy);
+    text-align: left;
+    margin-top: 64px;
+  }
+  .ty-next > div {
+    padding: 32px 28px 36px;
+    border-right: 1px solid var(--rule);
+  }
+  .ty-next > div:last-child { border-right: none; }
+  .ty-next .num {
+    font-family: var(--mono);
+    color: var(--gold);
+    letter-spacing: 0.14em;
+    font-size: 12px;
+    margin-bottom: 14px;
+  }
+  .ty-next h3 {
+    font-family: var(--display);
+    font-size: 22px;
+    margin: 0 0 8px;
+    line-height: 1.2;
+  }
+  .ty-next p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14.5px;
+    line-height: 1.55;
+  }
+  @media (max-width: 720px) {
+    .ty-next { grid-template-columns: 1fr; }
+    .ty-next > div {
+      border-right: none;
+      border-bottom: 1px solid var(--rule);
     }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'Outfit', sans-serif;
-      color: var(--text);
-      background: var(--cream);
-      overflow-x: hidden;
-    }
-
-    .page {
-      min-height: 100vh;
-      background: linear-gradient(165deg, var(--deep) 0%, var(--teal) 50%, var(--mid) 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .page::before {
-      content: '';
-      position: absolute;
-      top: -30%;
-      right: -15%;
-      width: 700px;
-      height: 700px;
-      background: radial-gradient(circle, rgba(47,181,199,0.12) 0%, transparent 70%);
-      border-radius: 50%;
-    }
-
-    .page::after {
-      content: '';
-      position: absolute;
-      bottom: -10%;
-      left: -10%;
-      width: 500px;
-      height: 500px;
-      background: radial-gradient(circle, rgba(47,181,199,0.08) 0%, transparent 70%);
-      border-radius: 50%;
-    }
-
-    .card {
-      position: relative;
-      z-index: 2;
-      background: rgba(255,255,255,0.06);
-      backdrop-filter: blur(20px);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 24px;
-      padding: 3.5rem 3rem;
-      max-width: 560px;
-      width: 90%;
-      text-align: center;
-      animation: fadeUp 0.8s ease both;
-    }
-
-    .check-icon {
-      width: 72px;
-      height: 72px;
-      background: rgba(47,181,199,0.15);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 2rem;
-    }
-
-    .check-icon svg {
-      width: 36px;
-      height: 36px;
-      stroke: var(--accent);
-      fill: none;
-      stroke-width: 2.5;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .card h1 {
-      font-family: 'DM Serif Display', serif;
-      font-size: clamp(1.8rem, 4vw, 2.4rem);
-      color: var(--white);
-      line-height: 1.2;
-      margin-bottom: 1rem;
-    }
-
-    .card p {
-      color: rgba(255,255,255,0.7);
-      font-size: 1.05rem;
-      line-height: 1.7;
-      margin-bottom: 1.5rem;
-    }
-
-    .card p strong {
-      color: rgba(255,255,255,0.9);
-      font-weight: 600;
-    }
-
-    .next-steps {
-      text-align: left;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 14px;
-      padding: 1.5rem 1.8rem;
-      margin-bottom: 2rem;
-    }
-
-    .next-steps h3 {
-      color: var(--accent);
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: 1rem;
-    }
-
-    .step {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.8rem;
-      margin-bottom: 0.8rem;
-    }
-
-    .step:last-child { margin-bottom: 0; }
-
-    .step-num {
-      width: 26px;
-      height: 26px;
-      background: rgba(47,181,199,0.15);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: var(--accent);
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
-
-    .step p {
-      color: rgba(255,255,255,0.6);
-      font-size: 0.9rem;
-      line-height: 1.5;
-      margin-bottom: 0;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.85rem 2rem;
-      border-radius: 8px;
-      font-family: 'Outfit', sans-serif;
-      font-size: 0.95rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.3s;
-      cursor: pointer;
-      border: none;
-    }
-
-    .btn-primary {
-      background: var(--accent);
-      color: var(--deep);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 24px rgba(47,181,199,0.35);
-    }
-
-    .btn-outline {
-      background: transparent;
-      color: var(--white);
-      border: 1.5px solid rgba(255,255,255,0.3);
-    }
-
-    .btn-outline:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-    }
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+    .ty-next > div:last-child { border-bottom: none; }
+  }
+</style>
 </head>
 <body>
+<div class="ty-stage">
 
-  <div class="page">
-    <div class="card">
-      <div class="check-icon">
-        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-      </div>
-      <h1>Message Received</h1>
-      <p>Thank you for reaching out to <strong>Caribbean Gateway Education Services</strong>. We will get back to you within 24 hours.</p>
-      <div class="next-steps">
-        <h3>What Happens Next</h3>
-        <div class="step">
-          <div class="step-num">1</div>
-          <p>We review your inquiry and match you with the right programs.</p>
-        </div>
-        <div class="step">
-          <div class="step-num">2</div>
-          <p>We reach out via WhatsApp or email to schedule a free consultation.</p>
-        </div>
-        <div class="step">
-          <div class="step-num">3</div>
-          <p>We walk you through your options, costs, and next steps.</p>
-        </div>
-      </div>
-      <div class="buttons">
-        <a href="https://wa.me/12426467726" class="btn btn-primary" target="_blank">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-          WhatsApp Us Now
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="brand">
+        <span class="brand__mark"><em style="font-style:italic">cg</em></span>
+        <span class="brand__name">
+          <b>Caribbean Gateway</b>
+          <span>Education · Tbilisi</span>
+        </span>
+      </a>
+      <nav class="nav__links">
+        <a href="index.html#/" class="nav__link">Home</a>
+        <a href="index.html#/about" class="nav__link">About</a>
+        <a href="index.html#/services" class="nav__link">Services</a>
+        <a href="index.html#/process" class="nav__link">Process</a>
+        <a href="index.html#/faq" class="nav__link">FAQ</a>
+        <a href="index.html#/contact" class="btn nav__cta">Book a call</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="ty-main">
+    <div class="ty-card">
+      <span class="ty-stamp">
+        <span class="ty-dot"></span>
+        <span class="mono" style="color: var(--sage-2); text-transform: uppercase; letter-spacing: 0.14em; font-size: 11px;">
+          Message received
+        </span>
+      </span>
+
+      <h1 class="ty-headline">
+        Thank you. <em>I'll be in touch.</em>
+      </h1>
+
+      <p class="ty-lede">
+        Your message landed safely. I read every one myself and reply personally —
+        usually within a few hours, always within 24.
+      </p>
+
+      <div class="ty-actions">
+        <a href="https://wa.me/995555982731" class="btn btn--gold">
+          WhatsApp now (faster)
+          <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden>
+            <path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
         </a>
-        <a href="index.html" class="btn btn-outline">Back to Home</a>
+        <a href="index.html" class="btn btn--ghost">Back to home</a>
+      </div>
+
+      <!-- WHILE YOU WAIT -->
+      <div style="margin-top: 24px;">
+        <span class="eyebrow">While you wait</span>
+        <h2 class="display" style="font-size: clamp(28px, 3.4vw, 40px); margin: 16px 0 8px;">
+          Three things <em>worth reading.</em>
+        </h2>
+      </div>
+
+      <div class="ty-next">
+        <div>
+          <div class="num">01</div>
+          <h3>How the process works</h3>
+          <p>Seven steps from first call to first day of class — usually four to eight weeks total.</p>
+          <a href="index.html#/process" class="link" style="display:inline-block; margin-top: 12px; font-size: 14px;">Read the process →</a>
+        </div>
+        <div>
+          <div class="num">02</div>
+          <h3>What it actually costs</h3>
+          <p>Three flat-fee tiers, transparent. Tuition is paid directly to the university — $4–8k a year.</p>
+          <a href="index.html#/services" class="link" style="display:inline-block; margin-top: 12px; font-size: 14px;">See pricing →</a>
+        </div>
+        <div>
+          <div class="num">03</div>
+          <h3>Common questions</h3>
+          <p>The questions families ask most — recognition, language, safety, timeline, paperwork.</p>
+          <a href="index.html#/faq" class="link" style="display:inline-block; margin-top: 12px; font-size: 14px;">Read the FAQ →</a>
+        </div>
       </div>
     </div>
-  </div>
+  </main>
 
-</body>
+  <!-- FOOTER -->
+  <footer class="footer" style="margin-top: 0;">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 18px;">
+            <span class="brand__mark" style="background: var(--ivory); color: var(--navy);">
+              <em style="font-style:italic">cg</em>
+            </span>
+            <span style="font-family: var(--display); font-size: 19px; letter-spacing: -0.01em;">
+              Caribbean Gateway
+            </span>
+          </div>
+          <p class="display" style="font-size: 24px; line-height: 1.25; max-width: 22ch; margin: 0;">
+            A Caribbean voice in <em>Tbilisi</em>, walking families through medical school.
+          </p>
+        </div>
+        <div>
+          <h4>Site</h4>
+          <ul>
+            <li><a href="index.html#/" class="link">Home</a></li>
+            <li><a href="index.html#/about" class="link">About</a></li>
+            <li><a href="index.html#/services" class="link">Services</a></li>
+            <li><a href="index.html#/process" class="link">Process</a></li>
+            <li><a href="index.html#/faq" class="link">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Reach us</h4>
+          <ul>
+            <li><a href="https://wa.me/995555982731" class="link">WhatsApp · +995 555 98 27 31</a></li>
+            <li><a href="/cdn-cgi/l/email-protection#83c4e0e2eee2e0ebecf1e6eae7c3eae0efecf6e7ade0ecee" class="link"><span class="__cf_email__" data-cfemail="430420222e22202b2c31262a27032a202f2c36276d202c2e">[email&#160;protected]</span></a></li>
+            <li>Tbilisi, Georgia</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="https://instagram.com/caribbeangatewayedu" class="link">Instagram</a></li>
+            <li><a href="https://www.facebook.com/share/14dmYRzE1v9/" class="link">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Caribbean Gateway Education Services</span>
+        <span>Made with care · Tbilisi → the Caribbean</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
 </html>

@@ -51,7 +51,7 @@ function FAQ() {
       </section>
 
       <section className="section" style={{ paddingTop: 0 }}>
-        <div className="container" style={{ display: "grid", gridTemplateColumns: "1fr 2.2fr", gap: 64 }} className="two-col">
+        <<div className="container two-col" style={{ display: "grid", gridTemplateColumns: "1fr 2.2fr", gap: 64 }}>
           <div className="faq-toc">
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 14, position: "sticky", top: 100 }}>
               {groups.map((g, i) => (

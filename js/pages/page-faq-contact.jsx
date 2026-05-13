@@ -202,8 +202,8 @@ function Contact() {
 
             <div className="card">
               <div className="mono" style={{ color: "var(--sage-2)", textTransform: "uppercase", letterSpacing: "0.14em", marginBottom: 12, fontSize: 11 }}>Email</div>
-              <a href="mailto:Gcamachoreid@icloud.com" className="link" style={{ fontFamily: "var(--display)", fontSize: 19 }}>
-                Gcamachoreid@icloud.com
+              <a href="mailto:info@scientumconsultancy.com" className="link" style={{ fontFamily: "var(--display)", fontSize: 19 }}>
+                info@scientumconsultancy.com
               </a>
             </div>
 

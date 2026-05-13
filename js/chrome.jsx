@@ -116,7 +116,7 @@ function Footer() {
             <h4>Reach us</h4>
             <ul>
               <li><a href="https://wa.me/995555982731" className="link">WhatsApp · +995 555 98 27 31</a></li>
-              <li><a href="mailto:Gcamachoreid@icloud.com" className="link">Gcamachoreid@icloud.com</a></li>
+              <li><a href="info@scientumconsultancy.com" className="link">info@scientumconsultancy.com</a></li>
               <li>Tbilisi, Georgia</li>
             </ul>
           </div>

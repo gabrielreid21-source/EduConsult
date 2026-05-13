@@ -51,7 +51,7 @@ function FAQ() {
       </section>
 
       <section className="section" style={{ paddingTop: 0 }}>
-        <div className="container" style={{ display: "grid", gridTemplateColumns: "1fr 2.2fr", gap: 64 }} className="two-col">
+        <div className="container two-col" style={{ display: "grid", gridTemplateColumns: "1fr 2.2fr", gap: 64 }}>
           <div className="faq-toc">
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 14, position: "sticky", top: 100 }}>
               {groups.map((g, i) => (
@@ -133,7 +133,7 @@ function Contact() {
       </section>
 
       <section className="section" style={{ paddingTop: 0 }}>
-        <div className="container" style={{ display: "grid", gridTemplateColumns: "1.3fr 1fr", gap: 80 }} className="two-col">
+       <div className="container two-col" style={{ display: "grid", gridTemplateColumns: "1.3fr 1fr", gap: 80 }}>
           {/* FORM — submits to thank-you.html so Google Ads can track the conversion */}
           <div>
             <form
@@ -202,8 +202,8 @@ function Contact() {
 
             <div className="card">
               <div className="mono" style={{ color: "var(--sage-2)", textTransform: "uppercase", letterSpacing: "0.14em", marginBottom: 12, fontSize: 11 }}>Email</div>
-              <a href="mailto:Gcamachoreid@icloud.com" className="link" style={{ fontFamily: "var(--display)", fontSize: 19 }}>
-                Gcamachoreid@icloud.com
+              <a href="mailto:info@scientumconsultancy.com" className="link" style={{ fontFamily: "var(--display)", fontSize: 19 }}>
+                info@scientumconsultancy.com
               </a>
             </div>
 

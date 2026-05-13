@@ -133,7 +133,7 @@ function Contact() {
       </section>
 
       <section className="section" style={{ paddingTop: 0 }}>
-        <div className="container" style={{ display: "grid", gridTemplateColumns: "1.3fr 1fr", gap: 80 }} className="two-col">
+       <div className="container two-col" style={{ display: "grid", gridTemplateColumns: "1.3fr 1fr", gap: 80 }}>
           {/* FORM — submits to thank-you.html so Google Ads can track the conversion */}
           <div>
             <form
